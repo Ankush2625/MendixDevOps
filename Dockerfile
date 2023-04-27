@@ -7,7 +7,7 @@ ARG ROOTFS_IMAGE=mendix/rootfs:ubi8
 ARG BUILDER_ROOTFS_IMAGE=mendix/rootfs:bionic
 
 # Build stage
-FROM ${BUILDER_ROOTFS_IMAGE} AS builder
+FROM ${BUILDER_ROOTFS_IMAGE} AS builder 
 
 # Build-time variables
 ARG BUILD_PATH=project
